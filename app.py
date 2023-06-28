@@ -8,7 +8,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return ("This is the about page of Thienesh")
+    return ("You have just arrived at About page!!")
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
