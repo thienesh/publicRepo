@@ -2,6 +2,8 @@ from flask import Flask, request, render_template, session
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = 'i_love_india'
+
 # CREATE A SESSION
 @app.route('/')
 def index():
