@@ -43,10 +43,11 @@ def index():
     data = APIUserModel.query.all()
     return render_template('write-new.html', data=data)
 
-#DELETE DATA
-@app.route('/delete/<int:id>', methods = ['GET','POST'])
+
+# DELETE DATA
+@app.route('/delete/<int:id>', methods=['GET', 'POST'])
 def delete(id):
-    APIUserModel.query.filter_by(id = id).delete()
+    APIUserModel.query.filter_by(id=id).delete()
     db.session.commit()
     return redirect(url_for('index'))
 
