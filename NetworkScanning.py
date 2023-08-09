@@ -1,5 +1,7 @@
 from scapy.all import srp, Ether, ARP
-#import scapy
+
+
+# import scapy
 
 def scan_network(interface):
     # Create ARP request
@@ -24,9 +26,10 @@ def scan_network(interface):
 
     return active_devices
 
+
 if __name__ == "__main__":
     # Replace 'eth0' with the name of your network interface
     active_devices = scan_network("Wi-Fi")
     print("Active Devices:")
     for device in active_devices:
-        print(f"IP: {device['192.168.29.143']} MAC: {device['E8:2A:44:91:54:79']}")
+        print(f"IP: {device['ip']} MAC: {device['mac']}")
