@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href= {{url_for('static', filename = 'css/bootstrap.min.css')}} >
+    <link rel="stylesheet" href= {{url_for('static', filename = 'css/thienesh_index_page.min.css')}}>
+    <script src= {{url_for('static', filename = 'js/jquery-3.7.0.min.map')}} charset="utf-8"> </script>
+    <title>Flask App</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset class="schudule-border">
+            <legend class="schedule-border">Add New User</legend>
+                <form method="POST">
+                    Name : <input type="text" name="name" class="form-control"/><br/>
+                    Email ID : <input type="text" name="email" class="form-control" /><br/>
+                    <input type="submit" name="submit" value="Save Data" class="btn btn-primary">
+                    <input type="reset" name="reset" value="Clear All" class="btn btn-danger">
+                </form>
+        </fieldset>
+    </div>
+</body>
+</html>
