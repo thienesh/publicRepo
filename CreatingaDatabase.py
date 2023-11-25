@@ -3,7 +3,7 @@ import pymysql
 #  create connection to database thienesh
 
 try:
-    db = pymysql.connect(host="localhost", user="root", password="Thienesh8@")
+    db = pymysql.connect(host="localhost", user="root", password="Thienesh8")
     cursor1 = db.cursor()
     sql = """CREATE DATABASE Sowmiya"""
     cursor1.execute(sql)
