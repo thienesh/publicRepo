@@ -1,5 +1,6 @@
 import os
 
+
 def count_files_in_path(path):
     if not os.path.exists(path):
         return "Path does not exist"
@@ -14,9 +15,9 @@ def count_files_in_path(path):
 
     return file_count
 
-# Replace 'your_path_here' with the path you want to count files in
-path_to_count = 'D:\study'
 
+# Replace 'your_path_here' with the path you want to count files in
+path_to_count = 'D:\\study'
 result = count_files_in_path(path_to_count)
 
 if isinstance(result, str):
